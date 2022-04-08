@@ -5,8 +5,8 @@
 </p>
 <br>
 
-Trasformar arquivo em array de bytes. 
-Trasformar array de bytes em arquivo.
+Convert file into byte array.
+Convert byte array into file.
 
 # bytes[ ]
 
