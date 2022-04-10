@@ -14,9 +14,9 @@ Get information file.
 ```cs
 using FileLibrary;
 
-byte[] filebyte = FileByte.ConvertFilePathToByte(@"C:\files\bytes.png");  // byte[]
-FileByte.SaveByteInPath(@"C:\files", "test.png", byte[]);                 // True
-byte[] filebyte = FileByte.ConvertFormFileToBytes(IFormFile)			  // byte[]
+byte[] filebyte = FileByte.ConvertFilePathToByte(@"C:\files\bytes.png");    // byte[]
+FileByte.SaveByteInPath(@"C:\files", "test.png", byte[]);   // True
+byte[] filebyte = FileByte.ConvertFormFileToBytes(IFormFile);   // byte[]
 ```
 
 # GET
@@ -25,8 +25,8 @@ byte[] filebyte = FileByte.ConvertFormFileToBytes(IFormFile)			  // byte[]
 
 using FileLibrary;
 
-var type = FileByte.GetType(@"C:\files\bytes.png");			    // png
-var name = FileByte.GetName(@"C:\files\bytes.png");  			// bytes
-var nameType = FileByte.GetNameAndType(@"C:\files\bytes.png");	// bytes.png
+var type = FileByte.GetType(@"C:\files\bytes.png"); // png
+var name = FileByte.GetName(@"C:\files\bytes.png"); // bytes
+var nameType = FileByte.GetNameAndType(@"C:\files\bytes.png");  // bytes.png
 
 ```
