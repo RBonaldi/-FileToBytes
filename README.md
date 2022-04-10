@@ -5,23 +5,28 @@
 </p>
 <br>
 
-Convert file into byte array.
-Convert byte array into file.
+Convert file into byte array.<br>
+Convert byte array into file.<br>
+Get information file.
 
-# bytes[ ]
+# Convert
 
 ```cs
 using FileLibrary;
 
-File.Validar("");     // True
-
+byte[] filebyte = FileByte.ConvertFilePathToByte(@"C:\files\bytes.png");  // byte[]
+FileByte.SaveByteInPath(@"C:\files", "test.png", byte[]);                 // True
+byte[] filebyte = FileByte.ConvertFormFileToBytes(IFormFile)			  // byte[]
 ```
 
-# File
+# GET
+
 ```cs
 
-using BytesLibrary;
+using FileLibrary;
 
-File.Validar("");      // True
+var type = FileByte.GetType(@"C:\files\bytes.png");			    // png
+var name = FileByte.GetName(@"C:\files\bytes.png");  			// bytes
+var nameType = FileByte.GetNameAndType(@"C:\files\bytes.png");	// bytes.png
 
 ```
